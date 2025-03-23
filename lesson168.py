@@ -59,3 +59,19 @@ d = '12/11/10'
 d = '2012-11-10'
 from time import strptime
 print(strptime(d, '%Y-%m-%d'))
+print('-'*80)
+
+s = 'Monday, April 18, in the year 2020 CE'
+fmt = '%A, %B %d, in the year %Y CE'
+print(strptime(s, fmt))
+print()
+
+s = 'Monday, April 18, 2020'
+#print(strptime(s, fmt))
+
+
+print('-'*80)
+
+
+
+
