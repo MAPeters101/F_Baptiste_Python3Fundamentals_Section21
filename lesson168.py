@@ -40,6 +40,11 @@ print(gmtime(tomorrow))
 print(tomorrow - now)
 print('-'*80)
 
-
+from calendar import timegm
+now_epoch = time()
+print(now_epoch)
+now_struct = gmtime(now_epoch)
+print(now_struct)
+print(timegm(now_struct))
 
 
