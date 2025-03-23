@@ -31,5 +31,15 @@ current = gmtime(time())
 print(current[0])
 print(current.tm_year)
 print(current[0:2])
+print('.'*80)
+
+now = time()
+tomorrow = now + (24 * 60 * 60)
+print(gmtime(now))
+print(gmtime(tomorrow))
+print(tomorrow - now)
+print('-'*80)
+
+
 
 
