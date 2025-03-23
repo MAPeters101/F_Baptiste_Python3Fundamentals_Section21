@@ -6,7 +6,7 @@ print(end)
 print('-'*80)
 
 start = perf_counter()
-sleep(1)
+sleep(.1)
 #sleep(3)
 end = perf_counter()
 elapsed = end - start
@@ -25,4 +25,11 @@ print('='*80)
 from time import time
 print(time())
 print(gmtime(time()))
+print('-'*80)
+
+current = gmtime(time())
+print(current[0])
+print(current.tm_year)
+print(current[0:2])
+
 
