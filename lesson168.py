@@ -55,5 +55,7 @@ print(strftime('%Y/%m/%d', now))
 print(strftime('%A is the best day of the week!', now))
 print('='*80)
 
-
-
+d = '12/11/10'
+d = '2012-11-10'
+from time import strptime
+print(strptime(d, '%Y-%m-%d'))
