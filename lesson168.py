@@ -46,5 +46,14 @@ print(now_epoch)
 now_struct = gmtime(now_epoch)
 print(now_struct)
 print(timegm(now_struct))
+print('.'*80)
+
+now = gmtime(time())
+print(now)
+from time import strftime
+print(strftime('%Y/%m/%d', now))
+print(strftime('%A is the best day of the week!', now))
+print('='*80)
+
 
 
